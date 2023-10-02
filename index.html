@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //zad 1
+        var imie = prompt("Podaj swoje imie");
+
+        alert("Witaj " + imie + "!");
+
+        //zad 2
+
+        var liczba1 = parseFloat(prompt("Podaj pierwsza liczbe: "));
+        var liczba2 = parseFloat(prompt("Podaj drugą liczbe: "));
+
+        var operacja = prompt("Wybierz operacje:\n1 - dodawanie\n2 - odejmowanie\n3 - mnozenie\n4 - dzielenie");
+
+        var wynik;
+
+        if (operacja === "1") {
+            wynik = liczba1 + liczba2;
+        } else if (operacja === "2") {
+            wynik = liczba1 - liczba2;
+        } else if (operacja === "3") {
+            wynik = liczba1 * liczba2;
+        } else if (operacja === "4") {
+            wynik = liczba1 / liczba2;
+        } else {
+            wynik = "Wybrano nieprawidlowa operacje"
+        }
+
+        alert("Wynik: " + wynik)
+
+        //zad 3
+        var wzrost = parseFloat(prompt("Podaj swoj wzrost: "));
+
+        if (wzrost > 185) {
+            alert("Jestes wysoki");
+        } else if (wzrost >= 165) {
+            alert("Jestes sredniego wzrostu");
+        } else {
+            alert("Jestes niski");
+        }
+
+        //zad 4
+        var rokurodzenia = parseInt(prompt("Podaj swój rok urodzenia:"));
+
+        var dzisiaj = 2023;
+
+        var wiek = dzisiaj - rokurodzenia;
+
+        alert("Twoj wiek to " + wiek + " lat");
+
+        //zad 5
+        var rokurodzenia = parseInt(prompt("Podaj swój rok urodzenia:"));
+
+        var dzisiaj = 2023;
+
+        var wiek = dzisiaj - rokurodzenia;
+
+        if (wiek >= 18) {
+            alert("Jestes pełnoletni");
+        } else {
+            alert("Jestes niepelnoletni");
+        }
+
+        //zad 6 
+        var operacja = prompt("Wybierz z jakich stopni chcesz przeliczyc:\n1 - z C na F\n2 - z F na C");
+
+        var stopniecelsjusza = parseFloat(prompt("Podaj stopnie C: "));
+        var stopniefarehaita = parseFloat(prompt("Podaj stopnie F: "));
+
+        var wynik;
+
+        if (operacja === "1") {
+           wynik = (stopniefarehaita - 32) * 5/9;
+        } else if (operacja === "2") {
+            wynik = (stopniecelsjusza * 5/9) + 32;
+        } else {
+            alert("Nie prawidlowa operacja")
+        }
+
+        alert("Wynik: " + wynik);
+    </script>
+</body>
+</html>
