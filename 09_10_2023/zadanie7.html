@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let liczba1 = parseInt(prompt("podaj pierwsza liczbe"));
+        let liczba2 = parseInt(prompt("podaj druga liczbe"));
+        let liczba3 = parseInt(prompt("podaj trzecia liczbe"));
+
+        if(liczba1 <= liczba2 && liczba1 <= liczba3) {
+            alert("Najmniejsza liczba to: " + liczba1);
+        } else if(liczba2 <= liczba1 && liczba2 <= liczba3) {
+            alert("najmniejsza liczba to: " + liczba2);
+        } else {
+            alert("Najmniejsza liczba to: " + liczba3);
+        }
+    </script>
+</body>
+</html>

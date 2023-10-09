@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rok = parseInt(prompt("podaj rok: "));
+
+        if((rok% 4 === 0 &&  rok % 100 !== 0) || rok % 400 === 0) {
+            alert("rok jest przestepny")
+        } else {
+            alert("rok nie jest przestepny");
+        }
+    </script>
+</body>
+</html>
