@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var wybor = prompt("Wybierz opcje: \n1 Celsjusz na Fahrenhaita\n2. Fahrenhaita na celsujsza");
+        var t,wynik;
+
+        if(wybor === "1") {
+        t = parseFloat(prompt("Podajtemperature w stopniach celsujsza: "));
+        wynik = t * 9/5 + 32;
+    } else if(wybor === "2") {
+    t = parseFloat(prompt("Podaj temperature w stopniach farenhaita: "));
+    wynik = (t - 32) * 5/9;
+    }
+
+    alert("Wynik: " + wynik);
+    </script>
+</body>
+</html>
