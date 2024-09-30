@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function convertAgeToDays(ageInYears) {
+        let age = parseInt(ageInYears);
+
+        let days = age * 365;
+
+        console.log(`Twój wiek ${age} lat to około ${days} dni.`);
+      }
+
+      let userAge = prompt("Podaj swój wiek w latach: ");
+      convertAgeToDays(userAge);
+    </script>
+  </body>
+</html>

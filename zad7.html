@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var ImieNazwisko = prompt("Podaj swoje imie i nazwisko:");
+      var maleLitery = ImieNazwisko.toLowerCase();
+      var wielkieLitery = ImieNazwisko.toUpperCase();
+      var odwroconelitery = ImieNazwisko.split("").reverse().join("");
+      var dlugosc = ImieNazwisko.length();
+
+      alert(
+        "rozne formaty:\n" +
+          "Male litery: " +
+          maleLitery +
+          "\n" +
+          "wielkie litery: " +
+          wielkieLitery +
+          "\n" +
+          "odwrocone litery: " +
+          odwroconelitery +
+          "\n" +
+          "dlugosc: " +
+          dlugosc
+      );
+    </script>
+  </body>
+</html>

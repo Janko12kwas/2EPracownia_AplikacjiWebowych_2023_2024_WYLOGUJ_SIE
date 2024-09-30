@@ -1,0 +1,39 @@
+!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myString = "czesc";
+      let myInteger = 42;
+      let myFloat = 3.14;
+      let myBoolean = true;
+
+      console.log(`String: ${myString}, Typ: ${typeof myString}`);
+      console.log(`Integer: ${myInteger}, Typ: ${typeof myInteger}`);
+      console.log(`Float: ${myFloat}, Typ: ${typeof myFloat}`);
+      console.log(`Boolean: ${myBoolean}, Typ: ${typeof myBoolean}`);
+
+      let stringToInteger = parseInt(myString);
+      let integerToString = myInteger.toString();
+      let floatToString = myFloat.toString();
+      let booleanToString = myBoolean.toString();
+
+      console.log(
+        `String -> Integer: ${stringToInteger}, Typ: ${typeof stringToInteger}`
+      );
+      console.log(
+        `Integer -> String: ${integerToString}, Typ: ${typeof integerToString}`
+      );
+      console.log(
+        `Float -> String: ${floatToString}, Typ: ${typeof floatToString}`
+      );
+      console.log(
+        `Boolean -> String: ${booleanToString}, Typ: ${typeof booleanToString}`
+      );
+    </script>
+  </body>
+</html>
